@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/audio-player.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section class="audio-player card">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title col text-center">Bootstrap 4 Audio Playlist</h2>
+        <div class="row align-items-center mt-4 mb-3 mx-0">
+          <i id="play-button"class="material-icons play-pause text-primary mr-2" aria-hidden="true">play_circle_outline</i>
+          <i id="pause-button"class="material-icons play-pause d-none text-primary mr-2" aria-hidden="true">pause_circle_outline</i>
+          <i id="next-button"class="material-icons text-primary ml-2 mr-3" aria-hidden="true">skip_next</i>
+          <div class="col ml-auto rounded-circle border border-primary p-1">
+            <img id="thumbnail" class="img-fluid rounded-circle" src="https://lorempixel.com/400/400/cats/1" alt="">
+          </div>
+        </div>
+        <div class="p-0 m-0" id="now-playing">
+          <p class="font-italic mb-0">Now Playing: </p>
+          <p class="lead" id="title"></p>
+        </div>
+        <div class="progress-bar progress col-12 mb-3">
+        </div>
+      </div>
+      <ul class="playlist list-group list-group-flush">
+        <li audio_url="https://archive.org/download/TabbyCatPurr/Purring.ogg"
+        img_url="https://lorempixel.com/400/400/cats/1"
+        class="active list-group-item playlist-item">
+        Duis aute irure</li>
+        <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+        class="list-group-item playlist-item"
+        img_url="https://lorempixel.com/400/400/cats/4">
+        Dapibus ac facilisis in</li>
+        <li audio_url="https://archive.org/download/Anxious_Purring/AnxiousPurringmp3.ogg"
+        class="list-group-item playlist-item"
+        img_url="https://lorempixel.com/400/400/cats/3">
+        Vestibulum at eros</li>
+      </ul>
+      <!-- <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+  </div>
+  <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+</section>
+
+
+<script src="https://use.fontawesome.com/3c21ed3659.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+<script src="js/audioPlayer.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap-audio-playlist",
+  "version": "0.0.1",
+  "description": "An audio playlist using jquery for functionality and bootstrap for styling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinerbehrends/Bootstrap4-Audio-Playlist.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap4",
+    "jquery",
+    "playlist",
+    "audio",
+    "music",
+    "list-group",
+    "card"
+  ],
+  "author": "Heiner S. Behrends",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heinerbehrends/Bootstrap4-Audio-Playlist/issues"
+  },
+  "homepage": "https://github.com/heinerbehrends/Bootstrap4-Audio-Playlist#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
+  }
+}
