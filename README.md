@@ -9,3 +9,4 @@ An audio playlist using jQuery and the slider of jQuery-ui for functionality and
 - featured image
 - easy to setup using html attributes audio_url and image_url on the list items
 - easy to customize using Bootstrap and jQuery
+- responsive
