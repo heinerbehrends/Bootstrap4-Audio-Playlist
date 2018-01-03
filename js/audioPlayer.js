@@ -30,7 +30,7 @@ $(document).ready(function() {
   // playlist item is the last, it will go to the first.
   function nextTrack(dest) {
     // Toggle Play/Pause button if paused
-    if (playButton.is(':visi')) {
+    if (playButton.is(':visible')) {
       togglePlayPause();
     }
     // Update UI
@@ -61,8 +61,7 @@ $(document).ready(function() {
     audioPlayer['0'].currentTime = 0;
     audioPlayer['0'].play();
   }
-
-
+  
   // Load the Play Pause Button functionality
   playPause.click(function() {
     if (audioPlayer['0'].paused === true) {

@@ -19,11 +19,6 @@
   }
 }
 
-#title {
-  font-style: normal;
-  font-weight: bolder;
-}
-
 #now-playing {
   display: none;
 }
@@ -32,33 +27,13 @@
   overflow: visible;
 }
 
-li.active:before,
-div.active:before {
+li.active:before {
   font-family: "Material Icons";
   content: "\e037";
-  color: $white;
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
   font-size: 1.5rem;
-}
-div.active:before {
-  position: absolute;
-  font-size: 4rem;
-}
-
-.img-grid img,
-.img-grid div {
-  width:100px;
-  height:100px;
-}
-.img-grid div.col {
-  flex-grow: 0;
-}
-
-div.active {
-  border: 1px solid transparent;
-  border-radius:50%;
 }
 
 .ui-slider-handle {
