@@ -29,6 +29,10 @@ $(document).ready(function() {
   // Use nextTrack() to go to the next playlist item. If the current
   // playlist item is the last, it will go to the first.
   function nextTrack(dest) {
+    // Toggle Play/Pause button if paused
+    if (playButton.is(':visi')) {
+      togglePlayPause();
+    }
     // Update UI
     thisSong.toggleClass('active');
     // Set default value for dest
@@ -90,7 +94,6 @@ $(document).ready(function() {
   })
 
   //   PLAYLIST
-  console.log('audio_url' + thisSong.attr('audio_url'));
   audioPlayer.attr("src", thisSong.attr('audio_url'));
   // NEXT button functionality
   nextButton.click(function() {
@@ -115,6 +118,4 @@ $(document).ready(function() {
     // done playing
     nextTrack();
   });
-
-  console.log(thisSong.is(':last-child'));
 });
