@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // __________VARIABLES_____________
+  // __________DOM Nodes_____________
   var playPause = $('.play-pause');
   var playButton = $('#play-button');
   var pauseButton = $('#pause-button');
@@ -61,7 +61,7 @@ $(document).ready(function() {
     audioPlayer['0'].currentTime = 0;
     audioPlayer['0'].play();
   }
-  
+
   // Load the Play Pause Button functionality
   playPause.click(function() {
     if (audioPlayer['0'].paused === true) {
